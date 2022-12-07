@@ -34,9 +34,18 @@ export class AddEmployeeComponent {
             (response)=>{
               console.log(response)
             }
-
+            
           
           )
+           this.empCode=""
+            this.empName=""
+            this.designstion=""
+            this.salary=""
+            this.compName=""
+            this.mobileNo=""
+            this.username=""
+            this.password=""
+
 
         }
 
