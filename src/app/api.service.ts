@@ -14,4 +14,7 @@ export class ApiService {
   addEmployee=(data:any)=>{
     return this.http.post("http://localhost:8080/add",data)
   }
+  searchData(data:any){
+    return this.http.post("http://localhost:8080/search",data);
+  }
 }
