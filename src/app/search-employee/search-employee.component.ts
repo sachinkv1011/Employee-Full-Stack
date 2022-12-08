@@ -30,4 +30,18 @@ export class SearchEmployeeComponent {
       }
     )
   }
+  deletebtnClick=(id:any)=>{
+    let data:any={"id":id}
+    this.api.deleteData(data).subscribe(
+      (response)=>{
+        console.log(response)
+        if (response=='success') {
+          alert("deleted successfully")
+          this.searchData=[]
+          
+        } 
+      }
+    )
+
+  }
 }
